@@ -1,0 +1,109 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+env/
+venv/
+ENV/
+.env*
+
+# Data (downloaded datasets) — keep your download script
+data/*
+!data/download_datasets.sh
+
+# Model artifacts
+models/**/checkpoints/
+models/**/saved_models/
+models/**/runs/
+
+# Interpretability outputs
+interpretability/**/outputs/
+interpretability/**/explanations/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Test/coverage reports
+.pytest_cache/
+coverage.*
+htmlcov/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Packaging (if you ever package this)
+build/
+dist/
+*.egg-info/
+.pip-wheel-metadata/
+```// filepath: .gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+env/
+.venv/
+ENV/
+.env*
+
+# Data (downloaded datasets) — keep your download script
+data/*
+!data/download_datasets.sh
+
+# Model artifacts
+models/**/checkpoints/
+models/**/saved_models/
+models/**/runs/
+
+*.pkl
+*.pt
+*.pth
+
+# Interpretability outputs
+interpretability/**/outputs/
+interpretability/**/explanations/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Test/coverage reports
+.pytest_cache/
+coverage.*
+htmlcov/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Packaging (if you ever package this)
+build/
+dist/
+*.egg-info/
+.pip-wheel-metadata/
