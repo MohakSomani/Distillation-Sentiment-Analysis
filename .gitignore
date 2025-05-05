@@ -22,6 +22,8 @@ models/**/saved_models/
 models/**/runs/
 models/transformers/bert-base-uncased
 models/transformers/results
+models/transformers/distilled
+models/transformers/distilled-bert
 
 # Interpretability outputs
 interpretability/**/outputs/
@@ -30,9 +32,6 @@ interpretability/**/explanations/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Logs
-*.log
-logs/
 
 # IDE settings
 .vscode/
@@ -86,10 +85,6 @@ interpretability/**/explanations/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-
-# Logs
-*.log
-logs/
 
 # IDE settings
 .vscode/
