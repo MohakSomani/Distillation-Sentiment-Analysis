@@ -20,6 +20,8 @@ data/*
 models/**/checkpoints/
 models/**/saved_models/
 models/**/runs/
+models/tranformers/bert-base-uncased
+models/tranformers/reshlts
 
 # Interpretability outputs
 interpretability/**/outputs/
