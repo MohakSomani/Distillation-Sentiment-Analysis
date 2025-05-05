@@ -11,6 +11,12 @@ def visualize_attention(text, model_path="models/transformers/bert-base-uncased"
     
     # Get attention weights from last layer
     attention = outputs.attentions[-1][0].detach().numpy().mean(axis=0)
+    # Save numeric attention weights to txt for cross-checking
+    tokens = inputs.tokens()
+    with open("logs/attention_weights.txt", "w") as f:
+        for i, row in enumerate(attention):
+            for j, val in enumerate(row):
+                f.write(f"{tokens[i]}\t{tokens[j]}\t{val}\n")
     
     # Plot
     plt.figure(figsize=(10, 6))

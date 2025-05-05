@@ -8,7 +8,7 @@ __pycache__/
 
 # Virtual environments
 env/
-venv/
+.venv
 ENV/
 .env*
 
@@ -20,8 +20,8 @@ data/*
 models/**/checkpoints/
 models/**/saved_models/
 models/**/runs/
-models/tranformers/bert-base-uncased
-models/tranformers/reshlts
+models/transformers/bert-base-uncased
+models/transformers/results
 
 # Interpretability outputs
 interpretability/**/outputs/

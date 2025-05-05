@@ -21,6 +21,10 @@ def plot_feature_importance(model_path, vectorizer_path, top_n=20):
     plt.barh(top_features, top_coefs, color=colors)
     plt.title("Top {} Important Features".format(top_n))
     plt.savefig("logs/feature_importance.png")  # Save to file
+    # Save numeric values to txt for cross-checking
+    with open("logs/feature_importance.txt", "w") as f:
+        for feature, coef in zip(top_features, top_coefs):
+            f.write(f"{feature}\t{coef}\n")
     plt.close()  # Prevent memory leaks
 
 if __name__ == "__main__":

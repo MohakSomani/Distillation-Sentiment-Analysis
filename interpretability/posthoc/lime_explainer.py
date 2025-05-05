@@ -13,6 +13,10 @@ class LIMESentimentExplainer:
 
     def explain(self, text):
         exp = self.explainer.explain_instance(text, self.predict_proba, num_features=10)
+        # Save numeric feature weights to txt for cross-checking
+        with open("logs/lime_features.txt", "w") as f:
+            for feature, weight in exp.as_list():
+                f.write(f"{feature}\t{weight}\n")
         return exp.as_html()
 
 if __name__ == "__main__":
