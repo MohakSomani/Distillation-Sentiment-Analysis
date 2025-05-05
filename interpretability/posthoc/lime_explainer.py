@@ -24,4 +24,4 @@ if __name__ == "__main__":
         "models/baselines/sst2_lr.pkl",
         "models/baselines/sst2_vectorizer.pkl"
     )
-    print(explainer.explain("This movie was terrible!"))
+    print(explainer.explain("The movie was absolutely fantastic! I loved every moment of it."))

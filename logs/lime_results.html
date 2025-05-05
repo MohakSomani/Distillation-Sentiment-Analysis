@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div22L7QJ52Y2FEX9O"></div>
+        <div class="lime top_div" id="top_div6GQ63YPFHFKVHPP"></div>
         
         <script>
-        var top_div = d3.select('#top_div22L7QJ52Y2FEX9O').classed('lime top_div', true);
+        var top_div = d3.select('#top_div6GQ63YPFHFKVHPP').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["negative", "positive"], [0.9413263134947587, 0.05867368650524133]);
+            var pp = new lime.PredictProba(pp_svg, ["negative", "positive"], [0.138193982408656, 0.861806017591344]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["negative", "positive"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["terrible", -0.16831791019020442], ["was", -0.12915224518185028], ["movie", -0.02321393136601739], ["This", -0.009071285170865983]], 1, exp_div);
+                exp.show([["fantastic", 0.16755325927801137], ["loved", 0.14963202646833226], ["was", -0.1282177850292015], ["absolutely", 0.11816675498495172], ["every", -0.04160054443131717], ["moment", 0.03670715204996441], ["movie", -0.02554347659866818], ["of", -0.013218620373280683], ["I", 0.0030029436863173386], ["it", -0.0016232091268764365]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["terrible", 15, -0.16831791019020442], ["was", 11, -0.12915224518185028], ["movie", 5, -0.02321393136601739], ["This", 0, -0.009071285170865983]], 1, "This movie was terrible!", raw_div, true);
+            exp.show_raw_text([["fantastic", 25, 0.16755325927801137], ["loved", 38, 0.14963202646833226], ["was", 10, -0.1282177850292015], ["absolutely", 14, 0.11816675498495172], ["every", 44, -0.04160054443131717], ["moment", 50, 0.03670715204996441], ["movie", 4, -0.02554347659866818], ["of", 57, -0.013218620373280683], ["I", 36, 0.0030029436863173386], ["it", 60, -0.0016232091268764365]], 1, "The movie was absolutely fantastic! I loved every moment of it.", raw_div, true);
             
         </script>
         </body></html>
